@@ -1,0 +1,15 @@
+{
+  "name": "myplugin",
+  "version": "1.0.0",
+  "description": "My first CKEditor 5 plugin project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RDS",
+  "license": "ISC",
+  "dependencies": {
+    "@ckeditor/ckeditor5-core": "^15.0.0",
+    "@ckeditor/ckeditor5-ui": "^15.0.0"
+  }
+}

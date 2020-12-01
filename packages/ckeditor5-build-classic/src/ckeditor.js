@@ -32,8 +32,11 @@ import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformatio
 
 import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
-import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
 import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperties';
+
+// import TableDefault from './tabledefault/tabledefault';
+import TableDefault from '../../ckeditor5-table/src/tabledefault';
+import MyPlugin from './myplugin/myplugin';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -58,10 +61,11 @@ ClassicEditor.builtinPlugins = [
   Link,
   List,
   MediaEmbed,
+  MyPlugin,
   Paragraph,
   PasteFromOffice,
   Table,
-  TableProperties,
+  TableDefault,
   TableCellProperties,
   TableToolbar,
   TextTransformation,
@@ -79,6 +83,8 @@ ClassicEditor.defaultConfig = {
       '|',
       'bulletedList',
       'numberedList',
+      '|',
+			'insertTable',
     ]
   },
   image: {
@@ -93,7 +99,7 @@ ClassicEditor.defaultConfig = {
     contentToolbar: [
       'tableColumn',
       'tableRow',
-      'tableProperties', 
+      'tableDefault', 
       'tableCellProperties'
     ]
   },
