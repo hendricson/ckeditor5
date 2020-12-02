@@ -26,17 +26,18 @@ import List from '@ckeditor/ckeditor5-list/src/list';
 import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
-import Table from '@ckeditor/ckeditor5-table/src/table';
-import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
+import Table from 'ckeditor5/packages/ckeditor5-table/src/table';
+import TableToolbar from 'ckeditor5/packages/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 
 import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
-import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperties';
+import TableCellProperties from 'ckeditor5/packages/ckeditor5-table/src/tablecellproperties';
+import TableDefault from 'ckeditor5/packages/ckeditor5-table/src/tabledefault';
 
 // import TableDefault from './tabledefault/tabledefault';
-import TableDefault from '../../ckeditor5-table/src/tabledefault';
-import MyPlugin from './myplugin/myplugin';
+ 
+//  import MyPlugin from './myplugin/myplugin';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -61,13 +62,15 @@ ClassicEditor.builtinPlugins = [
   Link,
   List,
   MediaEmbed,
-  MyPlugin,
+  // MyPlugin,
   Paragraph,
   PasteFromOffice,
+  
   Table,
   TableDefault,
   TableCellProperties,
   TableToolbar,
+  
   TextTransformation,
   Underline
 ];

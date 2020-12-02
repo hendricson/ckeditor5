@@ -71,5 +71,8 @@
   "scripts": {
     "build": "webpack --mode production",
     "preversion": "npm run build"
+  },
+  "dependencies": {
+    "ckeditor5": "git+https://github.com/hendricson/ckeditor5.git#stable"
   }
 }
